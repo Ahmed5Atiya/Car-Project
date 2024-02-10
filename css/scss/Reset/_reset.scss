@@ -1,0 +1,67 @@
+@use "../variable/variable" as * ;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+ul , ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+*:focus {
+    outline: none;
+}
+.btn{
+    border: none;
+    outline: none;
+    background-color: $main-color;
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    margin-top: 15px;
+    cursor: pointer;
+    display: block;
+    width: fit-content;
+}
+
+.special-heading{
+    width: fit-content;
+    margin: 30px auto;
+    text-align: center;
+    h2 {
+        font-size: 25px;
+        color: $main-color;
+    }
+    h6 {
+        font-size: 30px;
+        color: $text-color;
+        margin-top: 5px;
+    }
+    p{
+        color: #777;
+        font-size: 1.4rem;
+        margin-top: 5px;
+    }
+    @media (max-width:767px) {
+        h2 {
+            font-size: 22px;
+        }
+        h6 {
+            font-size: 25px;
+        }
+        p{
+            font-size: 1.2rem;
+        }
+    }
+}

@@ -1,0 +1,69 @@
+@use "../variable/variable" as *;
+@use "../function/mixin" as * ;
+
+footer{
+    @include padding;
+    background : $text-color;
+    display: block;
+    .container{
+        .social{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            flex-wrap: wrap;
+            @media (max-width : 767px) {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+                text-align: center;
+            }
+            .logo{
+                display: block;
+                h3 {
+                    color: $bg-color;
+                    font-size: 27px;
+                    margin-bottom: 20px;
+                    span {
+                        color: $main-color;
+                    }
+                }
+                .link {
+                    display: flex ;
+                    gap: 20px;
+                    color: $bg-color;
+                    i{
+                        font-size: 24px;
+                        color: $bg-color;
+                        cursor: pointer;
+                        transition: .5s;
+                        &:hover{
+                            color: $main-color;
+                        }
+                    }
+                }
+            }
+            .list-item{
+                display: block;
+                h3{
+                    color: $bg-color;
+                    font-size: 25px;
+                    margin-bottom: 15px;
+                }
+                li {
+                    margin-bottom: 15px;
+                    a{
+                        color: #777;
+                    }
+                }
+            }
+        }
+        .text {
+            width: fit-content;
+            margin: 30px  auto 0;
+            color: $bg-color;
+            text-align: center;
+        }
+    }
+}
