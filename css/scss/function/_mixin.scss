@@ -17,9 +17,7 @@
 @mixin col-6 {
     width: calc((100% / 12) * 6);
 }
-@mixin col-7 {
-    width: calc((100% / 12) * 7);
-}
+
 @mixin col-8 {
     width: calc((100% / 12) * 8);
 }
